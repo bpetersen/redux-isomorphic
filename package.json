@@ -4,7 +4,7 @@
   "description": "Isomorphic Redux App",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH:$NODE_PATH:./shared node --harmony .",
+    "start": "NODE_PATH=$NODE_PATH:./shared node --harmony .",
     "dev": "npm run start & webpack-dev-server --progress --color",
     "build": "NODE_ENV=production webpack --progress --color -p --config webpack.prod.config.js"
   },
@@ -27,8 +27,9 @@
     "immutable": "^3.7.5",
     "object-assign": "^4.0.1",
     "react": "^0.14.0",
+    "react-dom": "^0.14.0",
     "react-redux": "^3.1.0",
-    "react-router": "^0.13.4",
+    "react-router": "^1.0.0-rc3",
     "redux": "^3.0.2"
   }
 }
