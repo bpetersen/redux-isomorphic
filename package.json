@@ -1,0 +1,34 @@
+{
+  "name": "isomorphic-redux",
+  "version": "1.0.0",
+  "description": "Isomorphic Redux App",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_PATH:$NODE_PATH:./shared node --harmony .",
+    "dev": "npm run start & webpack-dev-server --progress --color",
+    "build": "NODE_ENV=production webpack --progress --color -p --config webpack.prod.config.js"
+  },
+  "author": "Milo Moduant <milomord@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "eslint": "^1.6.0",
+    "eslint-plugin-react": "^3.5.1",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "dependencies": {
+    "axios": "^0.7.0",
+    "express": "^4.13.3",
+    "history": "^1.12.5",
+    "immutable": "^3.7.5",
+    "object-assign": "^4.0.1",
+    "react": "^0.14.0",
+    "react-redux": "^3.1.0",
+    "react-router": "^0.13.4",
+    "redux": "^3.0.2"
+  }
+}
